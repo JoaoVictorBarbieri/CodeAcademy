@@ -1,0 +1,130 @@
+* {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  text-align: center;
+  opacity: 0.9;
+  margin: 0;
+
+}
+body {
+  background-color: black;
+
+}
+ main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+ }
+header {
+  max-width: 1200px;
+  max-height: 69px;
+  display: flex;
+  position: sticky;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  
+}
+header li {
+  display: inline-flex;
+  text-decoration: underline;
+  margin-left: 10px;
+
+  
+}
+header img{
+  max-height: 50px;
+  margin: 9px 10px;
+  
+}
+
+.background-pote{
+  align-content: center;
+  background-image: url(imagens/img-mission-background.jpg);
+  height: 700px;
+}
+.title-banner {
+  background-color: black;
+  padding: 10px;
+}
+h2 {
+  font-size: 32px;
+}
+
+.tea-container {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.tea-container h2 {
+  margin-bottom: 10px;
+}
+.grid-container {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.grid-item {
+  margin: 10px 15px;
+}
+.grid-item img {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.background-location {
+  max-width: 1200px;
+  margin: 50px 0 0 0;
+  background-image: url(imagens/img-locations-background.webp);
+  height: 500px;
+  align-content: center;
+}
+.location-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+
+}
+.location-item {
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  background-color: black;
+  opacity: 1;
+  margin: 0 40px;
+}
+.location-item h3 {
+  padding: 15px;
+}
+.location-item p {
+  text-align: center;
+  padding: 15px;
+}
+.footer-content {
+  max-width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer-item h2 {
+  margin-top: 15px;
+}
+
+.footer-item h5 {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.footer-item p {
+  margin-left: 20px;
+  text-align: start;
+  font-size: 14px;
+  font-weight: bold;
+}
