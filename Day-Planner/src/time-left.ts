@@ -13,7 +13,8 @@ export class TimeLeftPipe implements PipeTransform {
       return 'Time is up';
     }
 
-
+    const timeUnits = this.calculateTimeUnits(secondsLeft);
+    return this.formatTimeUnits(timeUnits);
   }
 
   private calculateSecondsDifference(dueDate: Date, currentDate: Date): number {

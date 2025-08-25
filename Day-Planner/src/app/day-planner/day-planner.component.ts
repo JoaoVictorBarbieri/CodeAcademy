@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Task } from '../task.model';
+import { Task } from '../../task.model';
 
 const today = new Date()
 @Component({
