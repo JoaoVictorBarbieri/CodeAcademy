@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { DayPlannerComponent } from './day-planner/day-planner.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [DayPlannerComponent],
+  templateUrl: './app.html'
 })
-export class App {
-  protected readonly title = signal('Day-Planner');
+export class AppComponent {
+  title = 'Daily Planner';
+
 }
