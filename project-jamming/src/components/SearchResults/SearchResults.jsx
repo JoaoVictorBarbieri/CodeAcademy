@@ -1,5 +1,5 @@
 import './SearchResults.css'
-import TrackList from '../Tracklist';
+import TrackList from '../Tracklist/TrackList';
 
 const SearchResults = () => {
   return (
