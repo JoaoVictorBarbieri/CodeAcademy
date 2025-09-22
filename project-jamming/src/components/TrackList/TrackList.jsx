@@ -1,7 +1,15 @@
-const TrackList = () =>{
+import './TrackList.css'
+import Track from '../Track/Track';
+
+const TrackList = () => {
   return (
-    <div>Track List</div>
-  )
-}
+    <div className="trackList">
+      {/* Exemplo de como os tracks seriam listados */}
+      <Track />
+      <Track />
+      <Track />
+    </div>
+  );
+};
 
 export default TrackList

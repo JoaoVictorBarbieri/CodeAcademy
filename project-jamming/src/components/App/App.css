@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.container {
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.h1{
+  color: lightgreen;
+  font-weight: bold;
+}
+
+.login{
+  padding: 8px 24px;
+  border-radius: 20px;
+}
+

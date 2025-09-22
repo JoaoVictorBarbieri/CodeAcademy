@@ -1,0 +1,26 @@
+.container {
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 8px;
+}
+
+.container2 {
+  margin-top: 20px;
+}
+
+.choose {
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.clear {
+  margin-left: 20px;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.addList {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+}

@@ -1,13 +1,12 @@
+import './Track.css'
+
 const Track = () => {
   return (
-    <div>
-      <div>
-        <span>Track Name</span>
-          <span>Track Artist / Track Album</span>
-      </div>
-      <button>Adicionar</button>
+    <div className="track">
+      <h4>Nome da Música</h4>
+      <p>Artista | Álbum</p>
     </div>
-  )
-}
+  );
+};
 
 export default Track
