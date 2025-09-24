@@ -1,11 +1,28 @@
+// src/components/Track/Track.jsx
+
+import React from 'react';
 import './Track.css';
 
-const Track = ({ track, isRemoval }) => {
+// Adicionamos onAdd e onRemove às props
+const Track = ({ track, onAdd, onRemove, isRemoval }) => {
+  // Função que será chamada quando o botão '+' for clicado
+  const addTrack = () => {
+    onAdd(track); // Chama a função onAdd, passando a música atual
+  };
+
+  // Função que será chamada quando o botão '-' for clicado
+  const removeTrack = () => {
+    onRemove(track); // Chama a função onRemove, passando a música atual
+  };
+
   const renderAction = () => {
     if (isRemoval) {
-      return <button className="Track-action">-</button>;
+      // Se for um botão de remoção, chama removeTrack no clique
+      return <button className="Track-action" onClick={removeTrack}>-</button>;
+    } else {
+      // Se for um botão de adição, chama addTrack no clique
+      return <button className="Track-action" onClick={addTrack}>+</button>;
     }
-    return <button className="Track-action">+</button>;
   };
 
   return (

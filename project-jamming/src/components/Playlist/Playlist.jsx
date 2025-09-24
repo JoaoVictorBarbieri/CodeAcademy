@@ -1,17 +1,23 @@
+// src/components/Playlist/Playlist.jsx
+
+import React from 'react';
 import './Playlist.css';
 import TrackList from '../TrackList/TrackList';
 
-const Playlist = () => {
-    const playlistTracks = [
-        { id: 5, name: 'Stronger', artist: 'Britney Spears', album: 'Oops!... I Did It Again' },
-        { id: 6, name: 'So Emotional', artist: 'Whitney Houston', album: 'Whitney' },
-        { id: 7, name: 'It\'s Not Right But It\'s Okay', artist: 'Whitney Houston', album: 'My Love Is Your Love' }
-    ];
-
+// O componente agora recebe 'playlistTracks' e 'onRemove' como props
+const Playlist = ({ playlistTracks, onRemove }) => {
   return (
     <div className="Playlist">
       <input defaultValue={'New Playlist'} />
-      <TrackList tracks={playlistTracks} isRemoval={true} />
+      {/*
+        Passamos as músicas da playlist para o TrackList.
+        Também passamos a função onRemove e definimos que o botão será de remoção (isRemoval={true})
+      */}
+      <TrackList
+        tracks={playlistTracks}
+        onRemove={onRemove}
+        isRemoval={true}
+      />
       <button className="Playlist-save">SAVE TO SPOTIFY</button>
     </div>
   );
