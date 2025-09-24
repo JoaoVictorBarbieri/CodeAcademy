@@ -1,12 +1,22 @@
-import './Track.css'
+import './Track.css';
 
-const Track = () => {
+const Track = ({ track, isRemoval }) => {
+  const renderAction = () => {
+    if (isRemoval) {
+      return <button className="Track-action">-</button>;
+    }
+    return <button className="Track-action">+</button>;
+  };
+
   return (
-    <div className="track">
-      <h4>Nome da Música</h4>
-      <p>Artista | Álbum</p>
+    <div className="Track">
+      <div className="Track-information">
+        <h3>{track.name}</h3>
+        <p>{track.artist} | {track.album}</p>
+      </div>
+      {renderAction()}
     </div>
   );
 };
 
-export default Track
+export default Track;

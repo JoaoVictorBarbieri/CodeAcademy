@@ -1,18 +1,20 @@
-import './Playlist.css'
+import './Playlist.css';
 import TrackList from '../TrackList/TrackList';
 
 const Playlist = () => {
+    const playlistTracks = [
+        { id: 5, name: 'Stronger', artist: 'Britney Spears', album: 'Oops!... I Did It Again' },
+        { id: 6, name: 'So Emotional', artist: 'Whitney Houston', album: 'Whitney' },
+        { id: 7, name: 'It\'s Not Right But It\'s Okay', artist: 'Whitney Houston', album: 'My Love Is Your Love' }
+    ];
+
   return (
-    <div className="container">
-      <h3>Your List</h3>
-      <TrackList />
-      <div className="container2">
-        <input type="text" defaultValue="choose name" className="choose"/>
-        <button className="clear">Clear</button>
-        <button className="addList">Add List</button>
-      </div>
+    <div className="Playlist">
+      <input defaultValue={'New Playlist'} />
+      <TrackList tracks={playlistTracks} isRemoval={true} />
+      <button className="Playlist-save">SAVE TO SPOTIFY</button>
     </div>
   );
 };
 
-export default Playlist
+export default Playlist;

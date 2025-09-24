@@ -1,30 +1,22 @@
-import './App.css'
-import Playlist from '../Playlist/Playlist'
-import SearchBar from '../SearchBar/SearchBar'
-import SearchResults from '../SearchResults/SearchResults'
+import './App.css';
 
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
 
-
-const App = () => {
+function App() {
   return (
-    <div className='container'>
-      <header className='header'>
-        <h1 className='h1'>jammming</h1>
-        <button className='login'>login</button>
-      </header>
-      <main className='grid'>
-        <div>
-          <SearchBar />
-        </div>
-        <div>
+    <div>
+      <h1>Ja<span className="highlight">mmm</span>ing</h1>
+      <div className="App">
+        <SearchBar />
+        <div className="App-playlist">
           <SearchResults />
-        </div>
-        <div>
           <Playlist />
         </div>
-      </main>
+      </div>
     </div>
   );
-};
+}
 
-export default App
+export default App;

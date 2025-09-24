@@ -1,15 +1,16 @@
-import './TrackList.css'
+import './TrackList.css';
 import Track from '../Track/Track';
 
-const TrackList = () => {
+const TrackList = ({ tracks, isRemoval }) => {
   return (
-    <div className="trackList">
-      {/* Exemplo de como os tracks seriam listados */}
-      <Track />
-      <Track />
-      <Track />
+    <div className="TrackList">
+      {
+        tracks.map(track => {
+          return <Track key={track.id} track={track} isRemoval={isRemoval} />
+        })
+      }
     </div>
   );
 };
 
-export default TrackList
+export default TrackList;
