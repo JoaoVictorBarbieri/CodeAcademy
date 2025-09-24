@@ -5,7 +5,10 @@ body {
   background-repeat: no-repeat;
   font-family: 'Work Sans', sans-serif;
   color: #fff;
+  margin: 0;
 }
+
+
 
 h1 {
   padding: .77rem 0;
